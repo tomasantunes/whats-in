@@ -2,6 +2,10 @@
 
 Movies Search Engine
 
+## OMDB API
+
+Insert your API key on the App.js file line 10.
+
 ## Available Scripts
 
 In the project directory, you can run:
