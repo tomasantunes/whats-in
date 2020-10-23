@@ -1,0 +1,74 @@
+.movie-results {
+    padding-top: 25px;
+}
+
+.movie-result {
+    position: relative;
+    width: 18%;
+    margin: 1%;
+    float: left;
+}
+
+.movie-result:hover .overlay{
+    opacity: 0.7;
+}
+
+.movie-result:hover .overlay-title{
+    opacity: 1;
+}
+
+.movie-result:hover .overlay-year{
+    opacity: 1;
+}
+
+.movie-result:hover .overlay-heart{
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0A1014;
+}
+
+.overlay-title {
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    opacity: 0;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.overlay-year {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay-heart {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    opacity: 0;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.movie-result img {
+    width: 100%;
+}

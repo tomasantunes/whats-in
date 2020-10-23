@@ -1,0 +1,31 @@
+body {
+    background-color: #0A1014;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+a, a:visited, a:focus, a:hover {
+    color: #7A8C99 !important;
+    cursor: pointer;
+}
+
+span {
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-results {
+    padding-top: 100px;
+    text-align: center;
+}

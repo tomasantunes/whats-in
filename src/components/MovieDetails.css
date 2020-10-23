@@ -1,0 +1,138 @@
+.movie-details {
+    padding: 15px;
+    background-color: #0A1014;
+}
+
+.movie-details-title {
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+
+.back-arrow {
+    cursor: pointer;
+}
+
+.movie-details-poster img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+.imdb-rating {
+    display: inline-block;
+    width: 125px;
+    height: 40px;
+    margin-right: 25px;
+}
+
+.imdb-rating-logo {
+    display: inline-block;
+    border: 1px solid transparent;
+    background-color: #FF9F1C;
+    height: 40px;
+    padding: 6px 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.imdb-rating-text {
+    display: inline-block;
+    border-top: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    height: 40px;
+    padding: 6px 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.rotten-rating {
+    display: inline-block;
+    width: 125px;
+}
+
+.rotten-rating-logo {
+    display: inline-block;
+    border: 1px solid transparent;
+    background-color: #FF4040;
+    height: 40px;
+    padding: 6px 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.rotten-rating-text {
+    display: inline-block;
+    border-top: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    height: 40px;
+    padding: 6px 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.favorite {
+    display: inline-block;
+    border: 1px solid #888;
+    border-radius: 5px;
+    height: 40px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.favorite-logo {
+    height: 40px;
+}
+
+.favorite-text {
+    color: #888;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.toggle-favorite {
+    color: white;
+    background-color: #FF4040;
+}
+
+.plot {
+    display: inline-block;
+    margin-top: 50px;
+    color: white;
+}
+
+.plot-label {
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.cast {
+    float: left;
+    margin-top: 50px;
+    color: white;
+}
+
+.cast-label {
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.genre {
+    float: left;
+    margin-top: 50px;
+    color: white;
+}
+
+.genre-label {
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.director {
+    float: left;
+    margin-top: 50px;
+    color: white;
+}
+
+.director-label {
+    color: #888;
+    margin-bottom: 5px;
+}
