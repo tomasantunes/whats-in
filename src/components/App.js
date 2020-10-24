@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div className="container">
         {(() => {
-          if (this.state.showSearch == true) {
+          if (this.state.showSearch === true) {
             return (
               <div>
                 <SearchBar onSubmit={this.onSearchSubmit} />

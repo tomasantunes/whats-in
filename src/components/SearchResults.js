@@ -18,7 +18,7 @@ class SearchResults extends React.Component {
   }
 
   selectMovie = (id) => {
-    let movie = this.props.results.find(x => x.imdbID == id);
+    let movie = this.props.results.find(x => x.imdbID === id);
     this.setState({selectedMovie: movie.Title, movieDetails: movie});
     this.props.onSearchToggle();
   }
@@ -40,7 +40,7 @@ class SearchResults extends React.Component {
     return (
       <div>
         {(() => {
-          if (this.state.selectedMovie != '') {
+          if (this.state.selectedMovie !== '') {
             return <MovieDetails selectedMovie={this.state.selectedMovie} movieDetails={this.state.movieDetails} onBackClick={this.resetSelectedMovie} apikey={this.props.apikey} />;
           }
           else if (results.length > 0) {

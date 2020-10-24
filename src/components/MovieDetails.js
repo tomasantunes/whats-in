@@ -49,15 +49,15 @@ class MovieDetails extends React.Component {
 
         let genres_arr = response.data.Genre.split(', ');
         let genres = [];
-        for (var i in genres_arr) {
-            genres.push({id: i, name: genres_arr[i]});
+        for (var j in genres_arr) {
+            genres.push({id: j, name: genres_arr[j]});
         }
         this.setState({genres: genres});
 
         let directors_arr = response.data.Director.split(', ');
         let directors = [];
-        for (var i in directors_arr) {
-            directors.push({id: i, name: directors_arr[i]});
+        for (var k in directors_arr) {
+            directors.push({id: k, name: directors_arr[k]});
         }
         this.setState({directors: directors});
         this.setState({isLoading: false});
@@ -77,10 +77,10 @@ class MovieDetails extends React.Component {
             const directors = this.state.directors.map(({id, name}) => {
                 return <p key={id}>{name}</p>;
             });
-            let favoriteClass = this.state.favorite == true ? "toggle-favorite" : "";
-            let favoriteIcon = this.state.favorite == true ? heartIconFull : heartIcon;
-            let favoriteText = this.state.favorite == true ? "Added" : "Add to favorites";
-            let backArrow = this.state.arrowHover == true ? backArrowWhite : backArrowGrey;
+            let favoriteClass = this.state.favorite === true ? "toggle-favorite" : "";
+            let favoriteIcon = this.state.favorite === true ? heartIconFull : heartIcon;
+            let favoriteText = this.state.favorite === true ? "Added" : "Add to favorites";
+            let backArrow = this.state.arrowHover === true ? backArrowWhite : backArrowGrey;
             return (
                 <div className="movie-details">
                     <div className="row">
@@ -120,7 +120,7 @@ class MovieDetails extends React.Component {
                         </div>
                         <div className="col-md-6">
                             <div className="movie-details-poster">
-                                <img src={this.state.movieData.Poster} />
+                                <img alt="Poster" src={this.state.movieData.Poster} />
                             </div>
                         </div>
                     </div>
